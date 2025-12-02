@@ -1,0 +1,23 @@
+table {
+  margin: 20px auto;
+  background: #b0b0b0; /* светло-серый базовый фон */
+  background: linear-gradient(
+    90deg,
+    rgba(200, 200, 200, 0.6) 0%,
+    rgba(160, 160, 160, 0.6) 50%,
+    rgba(120, 120, 120, 0.6) 100%
+  );
+  border: 2px solid #555555; /* темно-серый бордер */
+  color: #333333; /* цвет текста */
+}
+
+#table-caption {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #333333; /* темно-серый цвет */
+}
+
+#highlight {
+  background: #88888844; /* полупрозрачный серый для выделения */
+}

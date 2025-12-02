@@ -1,29 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Lab # 1</title>
-</head>
-<script src="js/myscript.js"></script>
-<body>
-    <ol>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-    <h1 class="main"> Next </h1>
-    <a href="form.html">   Test </a>
-    <br>
-    <a href="testKI.html">   Перехід до testKI.html </a>
-    <p>  <b onclick="mrun()">  text </b></p>
-    <p>  <b onclick="testfor()">  text   for</b></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-
-    <p>  <b onclick="alert (document.getElementsByTagName('p').length);"> set  tag </b></p>
-    <p>  <b onclick="look_p ()">  text innerHTML   for</b></p>
-
-</body>
+  <body>
+    <table
+      border="1"
+      cellspacing="0"
+      title="Lab-4"
+      summary="This table presents the monthly sales data for different product categories."
+    >
+      <summary id="table-caption">
+        <h1>Lab 4 Table</h1>
+      </summary>
+      <thead
+        id="table-header"
+        title="table-title"
+        lang="uk"
+        dir="ltr"
+        charoff="1"
+        valign="middle"
+      >
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <th
+            scope="col"
+            width="100"
+            height="50"
+            rowspan="3"
+            id="highlight"
+            dir="ltr"
+          >
+            н о м е р
+          </th>
+          <th
+            scope="col"
+            width="100"
+            height="50"
+            rowspan="3"
+            id="highlight"
+            dir="ltr"
+          >
+            назва
+          </th>
+          <th
+            scope="col"
+            width="100"
+            height="50"
+            colspan="4"
+            id="highlight"
+            dir="ltr"
+          >
+            характеристики
+          </th>
+          <th
+            scope="col"
+            width="100"
+            height="50"
+            rowspan="3"
+            id="highlight"
+            dir="ltr"
+          >
+            ціна
+          </th>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <th
+            scope="col"
+            width="100"
+            height="50"
+            colspan="2"
+            rowspan="2"
+            id="highlight"
+            dir="ltr"
+          >
+            Відеокарта
+          </th>
+          <th
+            scope="col"
+            width="100"
+            height="50"
+            colspan="2"
+            id="highlight"
+            dir="ltr"
+          ></th>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <th scope="col" width="100" height="50" id="highlight" dir="ltr">
+            процессор
+          </th>
+          <th scope="col" width="100" height="50" id="highlight" dir="ltr">
+            операційка
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td
+            width="100"
+            height="50"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            1
+          </td>
+          <td width="500" height="50" headers="highlight" axis="axis1">
+            HP Victus 15‑fa:
+          </td>
+          <td
+            width="200"
+            height="50"
+            colspan="2"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            NVIDIA GeForce RTX 4060
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            Intel Core i7-13620H
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            16 ГБ DDR4
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            44 499
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            ASUS TUF Gaming A15
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            AMD Ryzen 7-7435HS
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            16 ГБ DDR5
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            33 999
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td
+            width="100"
+            height="50"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            2
+          </td>
+          <td width="500" height="50" headers="highlight" axis="axis1">
+            Acer Nitro 16
+          </td>
+          <td
+            width="200"
+            height="50"
+            colspan="2"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            GPU: RTX 4070
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            AMD Ryzen 7-8845HS
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            16 GB RAM
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            51 300
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            Gigabyte AORUS 16X
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            Intel Core i7-13650HX
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            16 GB RAM
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            69 000
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td
+            width="100"
+            height="50"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            3
+          </td>
+          <td width="500" height="50" headers="highlight" axis="axis1">
+            Lenovo Legion 5 16
+          </td>
+          <td
+            width="200"
+            height="50"
+            colspan="2"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            GPU: RTX 4070
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            Intel Core i7‑14650HX
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            16 GB RAM
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            80 800 
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            ASUS ROG Strix G17
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            AMD Ryzen 9‑7845HX
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            16 GB RAM
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            89 999 
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td
+            width="100"
+            height="50"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            4
+          </td>
+          <td width="500" height="50" headers="highlight" axis="axis1">
+            Acer Predator Helios Neo 16
+          </td>
+          <td
+            width="200"
+            height="50"
+            colspan="2"
+            rowspan="2"
+            headers="highlight"
+            axis="axis1"
+          >
+            GPU: RTX 4070
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            Intel Core i9-14900HX
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            32 GB RAM
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            93 500
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            Dream Machines RG4070‑16
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            Intel Core i9‑14900HX
+          </td>
+          <td width="200" height="50" headers="highlight" axis="axis1">
+            32 GB RAM
+          </td>
+          <td width="100" height="50" headers="highlight" axis="axis1">
+            53 515
+          </td>
+        </tr>
+        <tr class="row-style" lang="uk" dir="ltr" align="center">
+          <td width="100" height="50" headers="highlight" axis="axis1"></td>
+          <td width="500" height="50" headers="highlight" axis="axis1"></td>
+          <td
+            width="200"
+            height="50"
+            colspan="2"
+            headers="highlight"
+            axis="axis1"
+          ></td>
+          <td width="100" height="50" headers="highlight" axis="axis1"></td>
+          <td width="100" height="50" headers="highlight" axis="axis1"></td>
+          <td width="100" height="50" headers="highlight" axis="axis1"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
