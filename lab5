@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArgBer</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f0f0;
+        color: #222;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 10px;
+        font-weight: 700;
+        font-size: 2.2em;
+        color: #111;
+        background-color: #e0e0e0;
+        border-bottom: 2px solid #ccc;
+      }
+
+      .container {
+        max-width: 600px;
+        background: #fff;
+        margin: 30px auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      label {
+        font-weight: 600;
+        color: #333;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        border: 1px solid #bbb;
+        font-family: inherit;
+        font-size: 15px;
+        color: #111;
+        background-color: #fafafa;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+        border-color: #666;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+
+      textarea {
+        min-height: 80px;
+      }
+
+      button {
+        padding: 12px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        background-color: #444;
+        color: #fff;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background-color: #666;
+      }
+
+      progress {
+        width: 100%;
+        height: 15px;
+        border-radius: 6px;
+        overflow: hidden;
+        accent-color: #444;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 14px;
+        padding: 20px 0;
+        color: #555;
+      }
+
+      @media (orientation: landscape) {
+        body {
+          background: #e8e8e8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>ArgBer</header>
+
+    <div class="container">
+      <form id="orderForm" action="https://example.com/send" target="_self">
+        <label for="name">Ім’я</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="2"
+          maxlength="30"
+        />
+
+        <label for="phone">Телефон</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9+() -]{10,15}"
+          required
+        />
+
+        <label for="email">Електронна пошта (необов’язково)</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="plan">Оберіть тариф</label>
+        <select name="plan" id="plan" required>
+          <optgroup label="Домашні тарифи">
+            <option value="basic">Basic 100 Мбіт/с</option>
+            <option value="plus">Plus 300 Мбіт/с</option>
+            <option value="max">Max 1 Гбіт/с</option>
+          </optgroup>
+          <optgroup label="Бізнес тарифи" disabled>
+            <option value="office">Office</option>
+          </optgroup>
+        </select>
+
+        <label for="comment">Коментар</label>
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Напишіть додаткову інформацію"
+        ></textarea>
+
+        <progress id="progressBar" max="100" value="60"></progress>
+
+        <button type="submit">Надіслати заявку</button>
+        <button type="reset">Очистити</button>
+      </form>
+    </div>
+
+    <footer>© 2025 ArgBer. Усі права захищені.</footer>
+  </body>
+</html>
