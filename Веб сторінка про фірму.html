@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про фірму</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: normal;
+      }
+
+      body {
+        background-color: #d3d3d3; /* СВІТЛО-СІРИЙ ЯК У ПЕРШОМУ */
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        color: #000;
+      }
+
+      .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .btn-bordo {
+        color: white !important;
+        background-color: #000 !important; /* ЧОРНІ КНОПКИ */
+        border: 1px solid #000 !important;
+        padding: 10px 20px;
+        margin: 5px;
+        transition: 0.3s;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+
+      .btn-bordo:hover {
+        background-color: #fff !important;
+        color: #000 !important;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-family: "Story Script", cursive;
+        font-size: 48px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #000;
+        margin-bottom: 15px;
+        padding: 5px;
+      }
+
+      img.store-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid #000;
+        margin: 10px 0;
+      }
+
+      hr {
+        border-width: thin;
+        border-style: solid;
+        border-color: #000;
+        margin: 20px auto;
+        width: 80%;
+      }
+
+      table {
+        width: 80%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        text-align: center;
+        color: #000;
+      }
+
+      td {
+        vertical-align: top;
+        padding: 5px;
+        color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <h1 id="title" title="Назва фірми" lang="uk">WebRet</h1>
+      </header>
+
+      <div class="container mt-4" id="nav-buttons">
+        <div class="btn-group" role="group">
+          <a href="http://127.0.0.1:5500/lab1.html" class="btn btn-bordo"
+            >Про мене</a
+          >
+          <a
+            href="http://127.0.0.1:5500/%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0%20%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD.html"
+            class="btn btn-bordo"
+            >Новини</a
+          >
+          <a
+            href="http://127.0.0.1:5500/%D0%92%D0%B5%D0%B1%20%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%20%D1%84%D1%96%D1%80%D0%BC%D1%83.html"
+            class="btn btn-bordo"
+            >Фірма</a
+          >
+        </div>
+      </div>
+
+      <hr />
+
+      <article class="services">
+        <p><b>Наші послуги</b></p>
+
+        <p>
+          <b>Продаж б/в комп’ютерів</b> — ми пропонуємо якісні перевірені
+          комп’ютери, ноутбуки та комплектуючі за вигідними цінами.
+        </p>
+        <p>
+          <b>Обмін із доплатою</b> — ви можете обміняти свій старий пристрій на
+          новий або інший б/в комп’ютер, доплативши різницю.
+        </p>
+        <p>
+          <b>Ремонт та обслуговування</b> — лагодимо комп’ютери, ноутбуки,
+          замінюємо деталі, оновлюємо софт та налаштовуємо систему.
+        </p>
+        <p>
+          <b>Консультації та допомога</b> — допомагаємо підібрати техніку під
+          ваші потреби, радимо оптимальні рішення для роботи чи навчання.
+        </p>
+        <p>
+          <b>Продаж комплектуючих та аксесуарів</b> — жорсткі диски, оперативна
+          пам’ять, миші, клавіатури та інше.
+        </p>
+        <p>
+          <b>Установка та налаштування програмного забезпечення</b> — операційні
+          системи, антивіруси, офісні пакети, ігрове ПЗ.
+        </p>
+      </article>
+
+      <hr />
+
+      <img src="магазин.jpg" alt="error" class="store-img" />
+
+      <hr />
+
+      <div>
+        <p><b>Наші комп’ютери</b></p>
+
+        <p>
+          <b>Комп’ютер 1:</b> Acer Aspire 7 | Intel Core i5-1135G7 | 2.4 ГГц |
+          NVIDIA GTX 1650 | SSD 512GB
+        </p>
+        <p>
+          <b>Комп’ютер 2:</b> Lenovo IdeaPad Gaming 3 | Ryzen 5 5600H | 3.3 ГГц
+          | RTX 3050 | HDD 1TB
+        </p>
+        <p>
+          <b>Комп’ютер 3:</b> HP Pavilion | Intel Core i7-10750H | GTX 1660 Ti |
+          SSD 256GB + HDD 1TB
+        </p>
+        <p>
+          <b>Комп’ютер 4:</b> Dell Inspiron 15 | Intel Core i3-1115G4 | UHD
+          Graphics | SSD 500GB
+        </p>
+        <p>
+          <b>Комп’ютер 5:</b> ASUS ROG Strix | Ryzen 7 5800H | RTX 3060 | SSD
+          1TB
+        </p>
+      </div>
+
+      <hr />
+
+      <table>
+        <tr>
+          <td>
+            <p><b>Графік роботи</b></p>
+            <p>Пн-Пт: 9:30-20:00</p>
+            <p>Сб: 11:00-18:00</p>
+            <p>Неділя: Вихідний</p>
+          </td>
+          <td>
+            <p><b>Контакти</b></p>
+            <p>Email: info@firma.ukr</p>
+            <p>Телефон: +380 00 000 00 00</p>
+            <p>Адреса: м. Київ, вул. Прикладна, 10</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
