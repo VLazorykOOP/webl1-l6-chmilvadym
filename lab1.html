@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Про мене</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: normal;
+      }
+
+      body {
+        background-color: #d3d3d3; /* как в 1 коде */
+        font-family: Arial, sans-serif;
+        min-width: 320px;
+        padding: 20px;
+        color: #000; /* весь текст чёрный */
+      }
+
+      .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Story Script", cursive;
+        font-size: 48px;
+        color: #000; /* чёрный */
+        margin-bottom: 5px;
+      }
+
+      h6.sub-text {
+        color: #000;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #000;
+        margin-bottom: 15px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      p:first-child::first-letter {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      i,
+      big,
+      small {
+        display: block;
+        margin: 5px 0;
+        color: #000;
+      }
+
+      small {
+        font-size: 12px;
+      }
+
+      .btn-bordo {
+        color: white !important;
+        background-color: #000 !important; /* кнопки чёрные */
+        border: 1px solid #000 !important;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 6px;
+        transition: 0.3s;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn-bordo:hover {
+        background-color: #fff !important;
+        color: #000 !important;
+        border-color: #000 !important;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      hr {
+        border-width: thin;
+        border-style: solid;
+        border-color: #000; /* чёрные линии */
+        width: 80%;
+        margin: 15px auto;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #000;
+        border-radius: 12px;
+        margin: 20px 0;
+      }
+
+      marquee {
+        font-weight: bold;
+        color: #000;
+        margin-top: 15px;
+      }
+
+      ol,
+      ul {
+        text-align: left;
+        margin-top: 10px;
+        color: #000;
+      }
+
+      dl {
+        text-align: left;
+        margin-top: 10px;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="content" class="wrapper">
+      <h1>Сторінка автора</h1>
+
+      <div class="button-container">
+        <a
+          href="http://127.0.0.1:5500/%D0%92%D0%B5%D0%B1%20%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%20%D1%84%D1%96%D1%80%D0%BC%D1%83.html"
+          class="btn-bordo"
+          >Про фірму</a
+        >
+        <a
+          href="http://127.0.0.1:5500/%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0%20%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD.html"
+          class="btn-bordo"
+          >Сторінка новин</a
+        >
+        <a href="http://127.0.0.1:5500/lab1.html#" class="btn-bordo"
+          >Про мене</a
+        >
+      </div>
+
+      <hr />
+
+      <p>
+        <b
+          >Привіт! Мене звати Чміль Вадим, і я тут, щоб поділитися своїм веселим
+          світом!</b
+        >
+      </p>
+
+      <p>
+        Я енергійний, допитливий і трохи безбашений хлопець, який обожнює
+        сміятися навіть у найсерйозніші моменти. Люблю машини, геймерські штуки,
+        а ще – цікаві подорожі і нові знайомства. Мій день починається з кави,
+        музики на повну гучність і невеликої дози хаосу, бо тільки так я
+        почуваюся живим.
+      </p>
+
+      <p>
+        Я завжди готовий до пригод, люблю несподівані повороти та смішні
+        ситуації. Можу сміятися з будь-чого і легко заводжу нових друзів. Мій
+        гумор іноді трохи дивний, але він завжди щирий. Обожнюю тварин, особливо
+        кішок і собак, і завжди готовий підкинути ідею для чергового
+        божевільного експерименту або творчого проекту.
+      </p>
+
+      <p>
+        Крім веселощів, я люблю розвивати себе: читаю книги, дивлюся
+        документалки, пробую нові хобі та вчуся всього, що здається цікавим. У
+        мене багато ідей, і часто я не можу вирішити, з якою з них почати спершу
+        – такий мій маленький хаос творчості.
+      </p>
+
+      <p>
+        Вірю, що життя потрібно проживати на повну: сміятися, помилятися,
+        вчитися, дружити і завжди залишатися собою. Мій девіз: Якщо щось
+        здається нудним – додай трішки сміху, і воно стане крутим! А ще я люблю
+        спонтанні ідеї, довгі вечори з друзями і каву під будь-який настрій.
+      </p>
+
+      <h6 class="sub-text">Мої улюблені цитати</h6>
+      <i>"Життя надто коротке, щоб сумувати."</i>
+      <big style="font-size: 22px"
+        >"Сміх робить навіть найпохмуріший день яскравішим."</big
+      >
+      <small style="font-size: 12px"
+        >"Важливо залишатися собою і не боятися веселитися."</small
+      >
+
+      <marquee scrollamount="6" scrolldelay="90" loop="5" height="40px">
+        Вітаю на моїй сторінці!
+      </marquee>
+
+      <hr />
+
+      <img src="котииик.jpg" alt="Котик" />
+
+      <ul class="list-circle" style="list-style-type: disc">
+        <li>Люблю котиків</li>
+        <li>Ціную гармонію</li>
+        <li>Надихаюся світом фантазії</li>
+      </ul>
+    </main>
+  </body>
+</html>
